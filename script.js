@@ -1,4 +1,4 @@
-const message = `I don’t even know if you’ll ever read this.\nBut if you do… I just want to say goodluck on your exams.\n\nJangan tido lambat okay? Jangan main ml banyak sangat tauu. Try to focus on ur studyyy and try ur best to get straight A's !!.\n\nI really hope you succeed in life and get everything that you've ever wished for and maybe one day u get the person u've always dreamed of too? Hahah.\n\nAnyways, I hope you're doing okay, and I believe that u can do it!! Baca bismillah and don't forget to solat & doa.`;
+const message = `I don’t even know if you’ll ever read this.\nBut if you do… I just want to say that \n\nHoping that you're always happy ? Jangan main ml banyak sangat tauu. Try to focus on ur studyyy and try ur best to get straight A's !!.\n\nI really hope you succeed in life and get everything that you've ever wished for and maybe one day u get the person u've always dreamed of too? Hahah.\n\nAnyways, I hope you're doing okay, and I believe that u can do it!! Baca bismillah and don't forget to solat & doa.`;
 
 function showLetter() {
   document.getElementById("introText").style.opacity = 0;
@@ -13,6 +13,7 @@ function showLetter() {
     function typeWriter() {
       if (i < message.length) {
         typedText.innerHTML += message.charAt(i);
+        
         i++;
         setTimeout(typeWriter, 30);
       }
@@ -20,4 +21,7 @@ function showLetter() {
 
     typeWriter();
   }, 600);
+}
+function showButton() {
+   document.getElementById("introText").style.opacity = "block";
 }
