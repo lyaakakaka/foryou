@@ -22,6 +22,7 @@ function showLetter() {
     typeWriter();
   }, 600);
 }
-function showButton() {
-   document.getElementById("introText").style.opacity = "block";
+function openLetter() {
+  document.getElementById("screen1").classList.remove("active");
+  document.getElementById("screen2").classList.add("active");
 }
